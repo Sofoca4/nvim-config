@@ -10,9 +10,17 @@ vim.opt.ts = 4
 vim.opt.clipboard:prepend('unnamed')
 vim.o.ignorecase = true
 vim.o.smartcase = true
+vim.o.expandtab = true
+vim.o.tabstop = 2
+vim.o.shiftwidth = 2
+--vim.o.splitright = true
 
 -- Use bash
 if vim.o.shell == '\"C:\\Program Files\\Git\\usr\\bin\\bash.exe\"' then
     vim.o.shellquote = '\"'
     vim.o.shellcmdflag='-s -c'
 end
+
+-- Global settings
+vim.g.netrw_bufsettings='noma nomod nonu nowrap ro nobl rnu'
+
