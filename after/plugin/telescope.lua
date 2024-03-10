@@ -1,6 +1,9 @@
 local actions = require('telescope.actions')
 local map = vim.keymap.set
 require('telescope').setup{
+    defaults = {
+      file_ignore_patterns = {'node_modules' }
+    },
     pickers = {
         find_files = {
             hidden = false
