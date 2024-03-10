@@ -8,6 +8,7 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 
 After installation you should open nvim, go to the configuration folder and then load the packer configuracion file. 
 > :so lua/sofoca/packer.lua
+> :PackerInstall
 
 ## Ripgrep
 This windows addon will be helpful for the fuzzy finder used on telescope
