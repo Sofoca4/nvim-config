@@ -17,10 +17,15 @@ vim.o.shiftwidth = 2
 
 -- Use bash
 if vim.o.shell == '\"C:\\Program Files\\Git\\usr\\bin\\bash.exe\"' then
-    vim.o.shellquote = '\"'
-    vim.o.shellcmdflag='-s -c'
+    vim.o.shell='bash'
+    vim.o.shellcmdflag='-c'
+    vim.o.shellredir='>%s 2>&1'
+    vim.o.shellquote=''
+    vim.o.shellxescape=''
+    vim.o.shellxquote=''
+    vim.o.shellpipe='2>&1| tee'
+    vim.fn.setenv("TMP","/tmp")
 end
 
 -- Global settings
 vim.g.netrw_bufsettings='noma nomod nonu nowrap ro nobl rnu'
-
